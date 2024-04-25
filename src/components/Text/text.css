@@ -1,0 +1,54 @@
+.text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: var(--color-default);
+}
+
+.text-header {
+    font-size: 24px;
+    line-height: 80px;
+    font-weight: 600;
+    letter-spacing: -1.6px;
+}
+
+.text-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-logo {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.text-primary {
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.text-danger {
+    color: var(--color-danger);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}

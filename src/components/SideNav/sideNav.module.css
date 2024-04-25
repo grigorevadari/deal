@@ -1,0 +1,19 @@
+.side-nav-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: var(--side-nav-width);
+    background: #F6F8FA;
+    border-right: solid 1px var(--color-grayscale-light);
+    box-sizing: border-box;
+    z-index: 40;
+}
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+    height: 56px;
+    margin: 0 0 20px;
+}

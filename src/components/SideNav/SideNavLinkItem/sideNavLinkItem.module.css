@@ -1,0 +1,28 @@
+.side-nav-icon {
+    height: 44px;
+    width: 100%;
+    max-width: 48px;
+    padding-left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-nav-icon svg {
+    fill: var(--color-grayscale);
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.nav-link:hover, .nav-link:hover p, .nav-link:hover .side-nav-icon svg {
+    color: var(--color-secondary);
+    fill: var(--color-secondary);
+}
+.nav-link.active, .nav-link.active p, .nav-link.active .side-nav-icon svg {
+    color: var(--color-primary);
+    fill: var(--color-primary);
+}
+

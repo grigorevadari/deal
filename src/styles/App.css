@@ -1,0 +1,26 @@
+@import "reset.css";
+
+:root {
+    --color-grayscale-light: #EBEEF1;
+    --color-primary: #0570de;
+    --color-base: #ffffff;
+    --color-secondary: #98989BFF;
+    --color-danger: #DF1B41;
+    --color-grayscale: #30313D;
+    --color-default: #30313d;
+
+    --side-nav-width: 170px;
+    --header-height: 56px;
+}
+
+.page-header{
+    padding: 24px 0;
+    border-bottom: solid 1px var(--color-grayscale-light);
+    margin-bottom: 24px;
+}
+.page-content{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
