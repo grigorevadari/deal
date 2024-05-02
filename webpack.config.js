@@ -1,9 +1,10 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
+    mode: 'development',
     entry: {
         app: "./src/index.tsx",
     },
@@ -30,13 +31,20 @@ module.exports = {
             template: path.resolve(__dirname, "public", "index.html"),
         }),
         new BundleAnalyzerPlugin(),
-        new OptimizeCssAssetsPlugin({
-            cssProcessor: require('cssnano'),
-            cssProcessorOptions: {
-                preset: ['default', {discardComments: {removeAll: true}}],
-            },
-        }),
     ],
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new CssMinimizerPlugin({
+                minimizerOptions: {
+                    preset: ['default', {
+                        discardComments: { removeAll: true }
+                    }],
+                },
+            }),
+            '...'
+        ],
+    },
     resolve: {
         extensions: [".ts", ".tsx", ".js", ".jsx"],
         alias: {
